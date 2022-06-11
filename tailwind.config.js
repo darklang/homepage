@@ -1,8 +1,16 @@
-/** @type {import('tailwindcss').Config} */
+const colors = require('tailwindcss/colors')
 module.exports = {
-  content: [],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        teal: colors.teal,
+        cyan: colors.cyan,
+      },
+    },
   },
-  plugins: [],
+  content: ["index.html", "src/*"],
+  plugins: [
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/aspect-ratio'),
+  ],
 }
