@@ -399,35 +399,111 @@
           <div class="text-lg max-w-prose mx-auto">
             <h1>
               <span class="block text-base text-center text-indigo-600 font-semibold tracking-wide uppercase">
-                The solution: Just Code
+                The solution
+              </span>
+              <span
+                class="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                Just Code
               </span>
             </h1>
             <p class="mt-8 text-xl text-gray-500 leading-8">
-              Darklang is specifically designed to remove this complexity. It does so by <span
-                class="font-bold">combining a programming
-                language, editor, and cloud infrastructure</span>, each based on industry best practices.
+              Darklang doesn't have any of this complexity. Instead, you just write code that's instantly available in
+              production. It does so by <span class="font-bold">combining a programming language, editor, and hosted
+                cloud infrastructure</span>.
             </p>
             <p class="mt-8 text-xl text-gray-500 leading-8">
-              This combination allows us to completely cut out <span class="font-bold">infrastructure complexity</span>:
-              you simply write the code you
-              want, without the need to provision anything. It's how serverless should have been.
+              This combination allows us to completely cut out <span class="font-bold">infrastructure complexity</span>.
+              We handle servers, databases and workers, all instantly available without having to write yaml, build
+              containers, or any of the overhead of configuring cloud infrastructute.
             </p>
             <p class="mt-8 text-xl text-gray-500 leading-8">
               <span class="font-bold">Deployment complexity</span> is removed because Darklang is designed for instant
-              deployment. Instead of packaging
-              and deploying containers, each tiny change made in the Darklang editor is instantly deployed, and the
-              language is designed to make this safe.
+              deployment. Instead of a complex CI/CD pipeline, or packaging and deploying containers, each tiny change
+              made in the Darklang editor is instantly deployed. All parts of Darklang are designed to make this safe,
+              from built-in feature flags, AST-based code storage, support for and the language is designed to make this
+              safe.
             </p>
             <p class="mt-8 text-xl text-gray-500 leading-8">
               Similarly, Darklang's <span class="font-bold">development environment</span> requires no setup. All
-              tooling is integrated into the editor and cloud,
-              and no steps are required to create or maintain it.
+              tooling is integrated into the editor and cloud, and no steps are required to create or maintain it. No
+              devcontainers or build systems or complex tooling.
             </p>
             <p class="mt-8 text-xl text-gray-500 leading-8">
               Finally, in addition to removing all this complexity, Darklang's combination of editor, language and
-              infrastructure allows features that do not exist elsewhere, such as Live values, trace-Driven development,
-              and always-on debugging.
+              infrastructure allows features that do not exist elsewhere, such as <span class="font-bold italic">live
+                values</span>, <span class="font-bold italic">Trace-Driven Development</span>, and <span
+                class="font-bold italic">always-on debugging</span>.
             </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative bg-gray-900">
+        <div class="h-80 absolute inset-x-0 bottom-0 xl:top-0 xl:h-full">
+          <div class="h-full w-full xl:grid xl:grid-cols-2">
+            <div class="h-full xl:relative xl:col-start-2">
+              <img class="h-full w-full object-cover opacity-25 xl:absolute xl:inset-0"
+                src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2830&q=80&sat=-100"
+                alt="People working on laptops">
+              <div aria-hidden="true"
+                class="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-gray-900 xl:inset-y-0 xl:left-0 xl:h-full xl:w-32 xl:bg-gradient-to-r">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="max-w-4xl mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8 xl:grid xl:grid-cols-2 xl:grid-flow-col-dense xl:gap-x-8">
+          <div class="relative pt-12 pb-64 sm:pt-24 sm:pb-64 xl:col-start-1 xl:pb-24">
+            <h2 class="text-sm font-semibold tracking-wide uppercase">
+              <span class="bg-gradient-to-r from-purple-300 to-indigo-300 bg-clip-text text-transparent">
+                That said, it's not all sunshine and daisies...
+              </span>
+            </h2>
+            <p class="mt-3 text-3xl font-extrabold text-white">Darklang is incomplete</p>
+            <p class="mt-5 text-lg text-gray-300">
+              Darklang has a long way to go to fulfil all its promise. The infrastructure part works, the deployless
+              works but does not have nearly all the features needed to make it safe, the editor is janky and buggy, and
+              the language is incomplete as well. And most importantly, Darklang doesn't yet for
+              support for the hundreds of thousands of packages and SDKs that you might be used to in Node or Python or
+              Go. Not even a user/account package.
+            </p>
+            <p class="mt-5 text-lg text-gray-300">
+              Darklang is built by Dark Inc, with 2 fulltime engineers working on it. We haven't gotten to product
+              market fit yet, and we believe that Darklang is not really <span class="italic">good</span>. It's cool,
+              it's interesting, it's got a lot of properties that frankly other languages and environments should steal,
+              but it's not actually <span class="italic">good</span> yet.
+            </p>
+            <p class="mt-5 text-lg text-gray-300">
+              We are confident it will get there, and you are welcome to try Darklang out, and even build things in it.
+              You'll likely find it eye-opening, liberating, and quite frustrating.
+            </p>
+            <div class="mt-12 grid grid-cols-1 gap-y-12 gap-x-6 sm:grid-cols-2">
+              <p>
+                <span class="block text-2xl font-bold text-white">305</span>
+                <span class="mt-1 block text-base text-gray-300">
+                  <span class="font-medium text-white">Projects</span>
+                  with more than 10 HTTP requests in some arbitrary 4 week period ending June 2022</span>
+              </p>
+
+              <p>
+                <span class="block text-2xl font-bold text-white">2</span>
+                <span class="mt-1 block text-base text-gray-300"><span class="font-medium text-white">Engineers
+                  </span> working full-time on Darklang.
+                </span>
+              </p>
+
+              <p>
+                <span class="block text-2xl font-bold text-white">98%</span>
+                <span class="mt-1 block text-base text-gray-300"><span class="font-medium text-white">Customer
+                    satisfaction</span> laoreet amet lacus nibh integer quis.</span>
+              </p>
+
+              <p>
+                <span class="block text-2xl font-bold text-white">12M+</span>
+                <span class="mt-1 block text-base text-gray-300"><span class="font-medium text-white">Issues
+                    resolved</span> lacus nibh integer quis.</span>
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -785,7 +861,8 @@
             src="https://images.unsplash.com/photo-1525130413817-d45c1d127c42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&q=60&sat=-100"
             alt="">
           <div aria-hidden="true"
-            class="absolute inset-0 bg-gradient-to-r from-teal-500 to-cyan-600 mix-blend-multiply"></div>
+            class="absolute inset-0 bg-gradient-to-r from-teal-500 to-cyan-600 mix-blend-multiply">
+          </div>
         </div>
         <div class="relative mx-auto max-w-md px-4 py-12 sm:max-w-7xl sm:px-6 sm:py-20 md:py-28 lg:px-8 lg:py-32">
           <div class="md:ml-auto md:w-1/2 md:pl-10">
